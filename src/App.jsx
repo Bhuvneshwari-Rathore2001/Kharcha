@@ -1,15 +1,12 @@
-import './App.css'
-import AuthenticatonLayout from './components/layouts/AuthenticationLayout'
-import DashboardLayout from './components/layouts/DashboardLayout'
+import './App.css';
+import AppRoute from './AppRoute';
 
 function App() {
-  const user= true
-  
   return (
     <>
-    {user ? <DashboardLayout/> : <AuthenticatonLayout/>}
+      <AppRoute />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

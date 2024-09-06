@@ -31,7 +31,9 @@ const Register = () => {
             />
           </div>
           <div className='flex flex-col gap-2'>
-            <div className='font-bold text-gray-700 text-sm'>Confirm Password</div>
+            <div className='font-bold text-gray-700 text-sm'>
+              Confirm Password
+            </div>
             <input
               className='border border-blue-600 p-3 text-gray-800  text-sm rounded'
               placeholder='Confirm your password'
@@ -47,6 +49,6 @@ const Register = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Register
+export default Register;

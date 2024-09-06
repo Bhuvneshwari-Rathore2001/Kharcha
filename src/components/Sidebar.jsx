@@ -1,37 +1,42 @@
-import SidebarItem from "./SidebarItem";
+import SidebarItem from './SidebarItem';
 
 const Sidebar = () => {
-
   const items = [
     {
-      id:1,
+      id: 1,
       name: 'Insights',
       icon: 'solar:graph-broken',
+      path: '/',
     },
     {
-      id:2,
+      id: 2,
       name: 'Transactions',
       icon: 'solar:graph-broken',
+      path: '/transaction',
     },
     {
-      id:3,
+      id: 3,
       name: 'Subscriptions',
       icon: 'carbon:loop',
+      path: '/subscription',
     },
     {
-      id:4,
+      id: 4,
       name: 'Calendar',
       icon: 'solar:calendar-add-broken',
+      path: '/calendar',
     },
     {
-      id:5,
+      id: 5,
       name: 'Filters',
       icon: 'solar:filter-broken',
+      path: '/filter',
     },
     {
-      id:6,
+      id: 6,
       name: 'Settings',
       icon: 'solar:settings-minimalistic-broken',
+      path: '/settings',
     },
   ];
 
@@ -46,7 +51,12 @@ const Sidebar = () => {
       <div className='border-b-2 text-white my-6' />
       <div className='pl-10 flex flex-col gap-2'>
         {items.map((item) => (
-          <SidebarItem name={item.name} icon={item.icon}  key={item.id}/>
+          <SidebarItem
+            name={item.name}
+            icon={item.icon}
+            key={item.id}
+            path={item.path}
+          />
         ))}
       </div>
     </div>
