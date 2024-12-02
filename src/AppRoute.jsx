@@ -10,6 +10,7 @@ import Reset from './pages/Reset';
 import Settings from './pages/Settings';
 import Subscription from './pages/Subscription';
 import Transaction from './pages/Transaction';
+import Profile from './pages/Profile';
 
 const AppRoute = () => {
   
@@ -31,6 +32,7 @@ const AppRoute = () => {
               <Route path='/calendar' element={<Calendar />}></Route>
               <Route path='/filter' element={<Filter />}></Route>
               <Route path='/settings' element={<Settings />}></Route>
+              <Route path='/profile' element={<Profile/>}></Route>
             
           </Routes>
 
